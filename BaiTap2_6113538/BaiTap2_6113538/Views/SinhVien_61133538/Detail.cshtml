@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Student Detail</h2>
+<ul>
+    <li>
+        Id: @ViewBag.Id
+    </li>
+    <li>
+        Name: @ViewData["Name"]
+    </li>
+    <li>
+        Marks: @ViewBag.Marks
+    </li>
+</ul>
+@{  
+    var message = "Hello World";
+    }
+<p>
+    Gia tri cua message la: @message
+</p>
+@{ 
+    var greeting = "Welcome....";
+    var weekDay = DateTime.Now.DayOfWeek;
+    var greetingMessage = greeting + "Today is: " + weekDay;
+}
+<p>
+    Loi chao la: @greetingMessage
+</p>

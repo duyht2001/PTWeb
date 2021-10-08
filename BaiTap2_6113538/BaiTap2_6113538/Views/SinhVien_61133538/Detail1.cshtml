@@ -1,0 +1,30 @@
+﻿@model BaiTap2_6113538.Models.Infomation
+@{
+    ViewBag.Title = "Detail1";
+}
+
+<h2>Thong tin sinh vien</h2>
+@{ Html.BeginForm();}
+
+<div>
+    Ma sinh vien:
+</div>
+<div>
+    @Html.EditorFor(Model => Model.Id)
+</div>
+<div>
+    Ho va ten:
+</div>
+<div>
+    @Html.EditorFor(Model => Model.Name)
+</div>
+<div>
+    Diem:
+</div>
+<div>
+    @Html.EditorFor(Model => Model.Marks)
+</div>
+<div>
+    <input type="submit" value="Dang ki" />
+</div>
+@{ Html.EndForm();}
