@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace BaiTap2_6113538.Models
+namespace BaiTap2_61133538.Models
 {
     public class Infomation
     {
