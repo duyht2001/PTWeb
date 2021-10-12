@@ -4,27 +4,35 @@
 }
 
 <h2>Thong tin sinh vien</h2>
-@{ Html.BeginForm();}
+@Html.BeginForm("Detail", "SinhVien_61133538")
 
-<div>
-    Ma sinh vien:
-</div>
-<div>
-    @Html.EditorFor(Model => Model.Id)
-</div>
-<div>
-    Ho va ten:
-</div>
-<div>
-    @Html.EditorFor(Model => Model.Name)
-</div>
-<div>
-    Diem:
-</div>
-<div>
-    @Html.EditorFor(Model => Model.Marks)
-</div>
-<div>
-    <input type="submit" value="Dang ki" />
-</div>
-@{ Html.EndForm();}
+<table>
+    <tr>
+        <td>
+            MÃ SINH VIÊN
+        </td>
+        <td>
+            <input type="text" name="Id" />
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            HỌ TÊN
+        </td>
+        <td>
+            <input type="text" name="Name" />
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            ĐIỂM
+        </td>
+        <td>
+            <input type="text" name="Marks" />
+        </td>
+    </tr>
+
+</table>
+<input type="submit" value="đăng ký" />

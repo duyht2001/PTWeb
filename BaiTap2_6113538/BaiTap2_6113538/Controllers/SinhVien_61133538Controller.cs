@@ -12,11 +12,10 @@ namespace BaiTap2_6113538.Controllers
         // GET: SinhVien_61133538
         public ActionResult Detail()
         {
-            ViewBag.Id = "SV001";
-            ViewBag.Name = "Nguyen Anh Tuan";
-            ViewData[ "Marks" ] = 9.5 ;
+            
             return View();
         }
+        [HttpPost]
         public ActionResult Detail1(Infomation st)
         {
             ViewBag.Id = st.Id;
